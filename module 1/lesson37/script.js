@@ -33,6 +33,7 @@ wrapper.addEventListener('click', (event) => {
     console.log('hellow');
   }
 });
+
 wrapper.addEventListener('click', (event) => {
   if (event.target && event.target.matches("button.red")){
     console.log('hellow');
