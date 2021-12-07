@@ -60,10 +60,10 @@ window.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  function getZero(num){
-    if (num >= 0 && num <10){
+  function getZero(num) {
+    if (num >= 0 && num < 10) {
       return `0${num}`;
-    }else{
+    } else {
       return num;
     }
   }
@@ -75,8 +75,8 @@ window.addEventListener('DOMContentLoaded', function () {
       minutes = timer.querySelector('#minutes'),
       seconds = timer.querySelector('#seconds'),
       timeInterval = setInterval(updateClock, 1000);
-    
-    function updateClock(){
+
+    function updateClock() {
       const t = getTimeRemain(endtime);
 
       days.innerHTML = getZero(t.days);
@@ -84,7 +84,7 @@ window.addEventListener('DOMContentLoaded', function () {
       minutes.innerHTML = getZero(t.minutes);
       seconds.innerHTML = getZero(t.seconds);
 
-      if (t.total <= 0){ clearInterval(timeInterval); }
+      if (t.total <= 0) { clearInterval(timeInterval); }
     }
   }
 
