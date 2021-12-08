@@ -29,7 +29,6 @@ const style = window.getComputedStyle(box);
 // можно получить стили псевдоэлементов.
 console.log(style.display);
 
-
 console.log(document.documentElement.scrollTop);
 //страницу в начало.
 document.documentElement.scrollTop = 0;
