@@ -91,4 +91,4 @@ btn.addEventListener('click', (e) =>{
   e.target.style.background-color = 'red';
 });
 
-btn.addEventListener('click', e => e.target.style.background-color = 'red');
+btn.addEventListener('click', (e) => { e.target.style.background-color = 'red';} );
